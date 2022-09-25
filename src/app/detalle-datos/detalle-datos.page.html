@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle de Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>Nombre Completo</div>
+      </ion-col>
+      <ion-col>
+        <div>Direccion</div>
+      </ion-col>
+      <ion-col>
+        <div>Telefono</div>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let person in datosEnv">
+      <ion-col>
+        <div>{{ person.nombrePerson }}</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 3</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 3</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
